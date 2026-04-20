@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vida Saludable</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4f4f4;
+}
+
+/* NAV */
+nav {
+  background: #27ae60;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px;
+  background: url('https://source.unsplash.com/1200x400/?healthy-food') center/cover;
+  color: white;
+}
+
+header h1 {
+  background: rgba(0,0,0,0.5);
+  display: inline-block;
+  padding: 10px;
+}
+
+/* CONTENIDO */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.post {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.post img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* BOTÓN */
+button {
+  background: #25D366;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #27ae60;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.ad {
+  background: #ddd;
+  padding: 15px;
+  text-align: center;
+  margin: 15px 0;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENÚ -->
+<nav>
+  <a href="#">Inicio</a>
+  <a href="#">Recetas</a>
+  <a href="#">Fitness</a>
+  <a href="#">Contacto</a>
+</nav>
+
+<!-- HEADER -->
+<header>
+  <h1>Vida Saludable</h1>
+  <p>Comida rica, fácil y económica</p>
+</header>
+
+<!-- CONTENIDO -->
+<div class="container">
+
+  <!-- POSTS -->
+  <div>
+
+    <div class="post">
+      <img src="https://source.unsplash.com/600x400/?salad">
+      <h2>Ensalada saludable fácil y económica</h2>
+      <p>Receta rápida para comer sano sin gastar mucho dinero.</p>
+    </div>
+
+    <div class="ad">
+      Aquí irá tu anuncio (AdSense)
+    </div>
+
+    <div class="post">
+      <img src="https://source.unsplash.com/600x400/?healthy-breakfast">
+      <h2>Desayuno fitness barato en Colombia</h2>
+      <p>Opciones económicas para empezar el día con energía.</p>
+    </div>
+
+    <div class="post">
+      <img src="https://source.unsplash.com/600x400/?fruit-snack">
+      <h2>Snacks saludables para estudiar</h2>
+      <p>Evita comida chatarra con estas ideas rápidas.</p>
+    </div>
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <h3>Contáctanos</h3>
+    <p>Asesoría en alimentación saludable</p>
+    <button onclick="window.open('https://wa.me/573000000000')">
+      WhatsApp
+    </button>
+
+    <div class="ad">
+      Espacio publicitario
+    </div>
+
+    <h3> Mas vistos</h3>
+    <ul>
+      <li>Comidas saludables baratas</li>
+      <li>Recetas fitness fáciles</li>
+      <li>Dieta económica</li>
+    </ul>
+
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Vida Saludable</p>
+</footer>
+
+</body>
+</html>
